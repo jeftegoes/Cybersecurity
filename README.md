@@ -46,14 +46,30 @@
   - [10.11. Prevention](#1011-prevention)
 - [11. Attacks](#11-attacks)
   - [11.1. Brute Force Attacks](#111-brute-force-attacks)
+    - [11.1.1. Prevention](#1111-prevention)
   - [11.2. Phishing](#112-phishing)
+    - [11.2.1. Types of Phishing](#1121-types-of-phishing)
+    - [11.2.2. Prevention](#1122-prevention)
   - [11.3. Bots \& Botnets](#113-bots--botnets)
+    - [11.3.1. Bots](#1131-bots)
+    - [11.3.2. Botnets](#1132-botnets)
+    - [11.3.3. Prevention](#1133-prevention)
   - [11.4. DoS \& DDoS](#114-dos--ddos)
-  - [11.5. Pings](#115-pings)
-  - [11.6. Man in the middle Attacks](#116-man-in-the-middle-attacks)
-  - [11.7. SQL Injections](#117-sql-injections)
-  - [11.8. Supply Chain Attacks](#118-supply-chain-attacks)
+    - [11.4.1. Prevention](#1141-prevention)
+  - [11.5. Man in The Middle Attacks](#115-man-in-the-middle-attacks)
+    - [11.5.1. Types of MITMAs](#1151-types-of-mitmas)
+  - [11.6. SQL Injections \& XSS Attack](#116-sql-injections--xss-attack)
+    - [11.6.1. SQL](#1161-sql)
+    - [11.6.2. SQL Injection](#1162-sql-injection)
+    - [11.6.3. Cross-site Scripting (XSS) Attack](#1163-cross-site-scripting-xss-attack)
+    - [11.6.4. Prevention](#1164-prevention)
+  - [11.7. Supply Chain Attacks](#117-supply-chain-attacks)
 - [12. Malware](#12-malware)
+  - [12.1. Viruses \& Worms](#121-viruses--worms)
+  - [12.2. Trojans](#122-trojans)
+  - [12.3. Adware and Spyware](#123-adware-and-spyware)
+  - [12.4. Ransonware](#124-ransonware)
+  - [12.5. Others](#125-others)
 - [13. Defences](#13-defences)
 - [14. Cybersecurity at the Work Place](#14-cybersecurity-at-the-work-place)
 - [15. Basic terminologies](#15-basic-terminologies)
@@ -78,6 +94,8 @@
 
 # 2. CIA
 
+IMAGE HERE
+
 - These are the three fundamental pillars of cybersecurity and cyber crime in general (CIA).
 
 ## 2.1. Confidentiality
@@ -96,6 +114,8 @@
 - Can be achieved through the use of **backups**, **maintenance** & **disaster recovery plans**.
 
 # 3. DAD
+
+IMAGE HERE
 
 - DAD is basically the exact opposite of CIA.
 
@@ -170,6 +190,8 @@
   - **Internet/Networking Layer:** Connects independent networks together e.g. IP.
   - **Transport Layer:** Handles communication between hosts e.g. TCP.
   - **Application Layer:** Standardizes data exchange for applications e.g. HTTP, FTP.
+
+IMAGE HERE
 
 ## 6.1. TCP
 
@@ -342,31 +364,139 @@
     - Total Permutation = 62\*62 = 3,844.
 - Dictionary Attack:
   - All words from a dictionary are tried.
-- Prevention:
-  - Use of strong passwords.
-  - Restrict number of times a user can attempt to login successfully.
-  - Enforcing a timeout for users who exceed the specified maximum of failed login attempts.
+
+### 11.1.1. Prevention
+
+- Use of strong passwords.
+- Restrict number of times a user can attempt to login successfully.
+- Enforcing a timeout for users who exceed the specified maximum of failed login attempts.
 
 ## 11.2. Phishing
 
 - What's Phishing?
-  - The attempt 
+  - The attempt by a hacker to obtain sensitive data by sending **crafted emails** to a pontential victim whilst **impersonating** a known person or body.
+- The email contains a **malicious link** which when clicked on, can either install malware or **redirect** the victim to a fake website.
+- The website will appear to be **legitimate** and will resemble the actual website of the company the hacker is **impersonating**.
+- The victim is then prompted to login whgick when he/she does, the credentials are recorded and sent to the hacker.
+- Phishing relies on:
+  - Naivety.
+  - Curiosity.
+  - Fear.
+
+### 11.2.1. Types of Phishing
+
+- Classic/Email
+  - Spam emails with malicious links are sent in mass to as many email addresses as possible.
+- Spear
+  - Phishing attack directed at a very specific target.
+- Whaling
+  - Phishing attack directed against senior executives. SOmetimes called the CEO fraud attack.
+- Vishing
+  - Phishing attack with a phone call.
+- Smishing
+  - Phishing attack with text messages.
+
+### 11.2.2. Prevention
+
+- Training.
+- Security alertness.
+- Using anti-malware software.
 
 ## 11.3. Bots & Botnets
 
+### 11.3.1. Bots
+
+- Short for robots.
+- Commonly referred to as Zombies.
+- An attacker gains complete control over the infected computer using a trojan horse.
+- The infected computer's performance is severely degraded.
+
+### 11.3.2. Botnets
+
+- A collection of bots.
+- A botmaster or bot herder is in control of the botnets.
+- A command & control server is used to issue commands to the bots in a botnet.
+- Botnets are very often used to perform DDoS attacks.
+
+IMAGE HERE
+
+### 11.3.3. Prevention
+
+- Updated antivirus and antimalware products.
+- Not clicking on suspicious links.
+
 ## 11.4. DoS & DDoS
 
-## 11.5. Pings
+- Floods servers and networks with useless traffic.
+- A website becomes inaccessible or there is an enormous amount of spam email.
+- The IP address of the source can be blocked.
+- Harder to combat because traffic comes form thousands of different sources.
+- It is also difficult do distinguish between legitimate user traffic from attack when spread across so many sources.
+- DDoS attacks are distribuited using botnets.
+- Very common with Hacktivists.
 
-## 11.6. Man in the middle Attacks
+### 11.4.1. Prevention
 
-## 11.7. SQL Injections
+- Overprovision bandwidth.
+- Creating a DDoS playbook (Professional specialists).
+- Calling a DDoS specialist e.g. [Akamai](https://www.akamai.com/), [CloudFlare](https://www.cloudflare.com/).
 
-## 11.8. Supply Chain Attacks
+## 11.5. Man in The Middle Attacks
+
+image here
+
+- Can only succeed when the attacker can impersonate both sides.
+- Very common with unsecure wireless connection.
+
+### 11.5.1. Types of MITMAs
+
+- **Email Hijacking:** Attacker gains access to email accounts.
+- **Wifi Eavesdropping:** Hijacking a wifi connection.
+- **Session Hijacking:** Connection between a computer and a website.
+
+## 11.6. SQL Injections & XSS Attack
+
+### 11.6.1. SQL
+
+- **SQL** = Structured Query Language.
+- Used for database management and data manipulation.
+- **SQL** is used to query, insert, update and modify data.
+
+### 11.6.2. SQL Injection
+
+- The attacker executes malicious SQL commands to corrupt a database.
+- Can provide the attacker with unauthorized access to sensitive information like passwords and usernames.
+- One of the oldest forms of attacks.
+
+### 11.6.3. Cross-site Scripting (XSS) Attack
+
+- The attacker executes malicious scripts of code in to a website or web application.
+- The attacker does not target the victim directly but the website that the victim would visit.
+- The victim's browser becomes infected.
+
+### 11.6.4. Prevention
+
+- Limiting database privileges.
+- comprehensive data sanitization e.g. only numbers allowed in a phone number field in a form.
+- Applying software patches.
+
+## 11.7. Supply Chain Attacks
+
+- Image here
 
 # 12. Malware
 
 - Malware = Malicious Software
+
+## 12.1. Viruses & Worms
+
+## 12.2. Trojans
+
+## 12.3. Adware and Spyware
+
+## 12.4. Ransonware
+
+## 12.5. Others
 
 # 13. Defences
 
