@@ -66,10 +66,20 @@
   - [11.7. Supply Chain Attacks](#117-supply-chain-attacks)
 - [12. Malware](#12-malware)
   - [12.1. Viruses \& Worms](#121-viruses--worms)
+    - [12.1.1. Objectives](#1211-objectives)
+    - [12.1.2. Prevention](#1212-prevention)
   - [12.2. Trojans](#122-trojans)
+    - [12.2.1. Types](#1221-types)
+    - [12.2.2. Prevention](#1222-prevention)
   - [12.3. Adware and Spyware](#123-adware-and-spyware)
+    - [12.3.1. Prevention](#1231-prevention)
   - [12.4. Ransonware](#124-ransonware)
+    - [12.4.1. Methods of Delivery](#1241-methods-of-delivery)
+    - [12.4.2. Prevention](#1242-prevention)
   - [12.5. Others](#125-others)
+    - [12.5.1. Rootkits](#1251-rootkits)
+    - [12.5.2. Browser Hijacker](#1252-browser-hijacker)
+    - [12.5.3. Rogue Security Software](#1253-rogue-security-software)
 - [13. Defences](#13-defences)
 - [14. Cybersecurity at the Work Place](#14-cybersecurity-at-the-work-place)
 - [15. Basic terminologies](#15-basic-terminologies)
@@ -94,7 +104,7 @@
 
 # 2. CIA
 
-IMAGE HERE
+![CIA Diagram](Images/CIA.png)
 
 - These are the three fundamental pillars of cybersecurity and cyber crime in general (CIA).
 
@@ -115,7 +125,7 @@ IMAGE HERE
 
 # 3. DAD
 
-IMAGE HERE
+![DAD Diagram](Images/DAD.png)
 
 - DAD is basically the exact opposite of CIA.
 
@@ -486,17 +496,127 @@ image here
 
 # 12. Malware
 
-- Malware = Malicious Software
+- **Malware** = Malicious Software.
 
 ## 12.1. Viruses & Worms
 
+- Viruses and worms are malicious code written to alter the way a computer or a network operates.
+- A virus requires an active host program or an already infected system to run and cause damage by infecting other executable files or documents.
+- A worm is self replicating and self propagating.
+- Viruses:
+  - Viruses typically attach themselves to executable files and word documents.
+  - They spread via email attachments, infected websites and flash drives.
+  - A virus will remain dormant until the infected file or system is activated.
+  - Once activated, the virus causes destruction.
+- Worms:
+  - Worms enter system via network connection or a downloaded file.
+  - They then make copies of themselves and can spread via a network / internet connection.
+
+### 12.1.1. Objectives
+
+- Viruses can vary widely in their objectives.
+- Some are purely destructive i.e. destroy files.
+- Others can slow down system performance.
+- Some viruses are non destructive i.e latent viruses.
+
+### 12.1.2. Prevention
+
+- Antivirus and Antimalware products.
+- Restrict use of flash drives.
+- Scan Email Attachments.
+
 ## 12.2. Trojans
+
+- What's a Trojan?
+  - A very powerful malware often disguised as legitimate software.
+  - Very sophisticated and coud be anything e.g. game, song or even an app.
+  - A trojan cannot self replicate.
+
+![Trojan](Images/Trojan.png)
+
+### 12.2.1. Types
+
+- **Backdoor Trojan:** Allows a hacker unauthorized access to a system in order to control it.
+- **Infostealer Trojan:** Steals data from the infected computer.
+- **Trojan Downloader:** Can download and install new versions of malware onto a system.
+- **Trokan DDoS:** Can conduct denial of service attacks agains websites.
+
+### 12.2.2. Prevention
+
+- Using Antimalware products.
+- Run updates when available (patchs).
+- Download files from only trusted websites.
 
 ## 12.3. Adware and Spyware
 
+- What's an Adware?
+  - A program that displays unwanted banner advertisements.
+- Often bundled within software that is installed.
+- Adware is included to recover development costs or provider the product for free.
+- Some adware can hijack your browser start or search pages.
+- Others can track web usage and are typically referred to as spyware.
+
+![Adware](Images/Adware.png)
+
+- What's an Spyware?
+  - Spyware monitor computer and internet use.
+- E.g. Keyloggers that can record keystrokes or take screenshots.
+- Data is sent to hackers of advertising agencies.
+
+### 12.3.1. Prevention
+
+- Think twice about free software.
+- Use spyware scanners.
+
 ## 12.4. Ransonware
 
+- **Ransonware** = Kidnapping data.
+- Ransomware depends on:
+  - Data access.
+  - Data sensitivity.
+- The victim's files are encrypted and must pay a ransom in order to receive the decryption key that would allow them to regain access.
+
+![Ransonware](Images/RansomPayment.png)
+
+- The ransomware gang might threaten to release sensitive company data to the public e.g. tax records, salaries.
+
+### 12.4.1. Methods of Delivery
+
+- Phishing.
+- Malvertising.
+- Drive by downloads (visiting infected sites).
+- Pirated Software.
+- USB drives.
+
+### 12.4.2. Prevention
+
+- Backups.
+- Security training.
+- Efficient disaster recovery plans.
+
 ## 12.5. Others
+
+### 12.5.1. Rootkits
+
+- _"The burglar hiding in the attic"_.
+- Hardest malware of all to detect and remove.
+- It allows viruses and other malware to "hide in plain sight" by disguising them as real essential files.
+- They are activated even before the operating system boots up.
+- Recommended solution will be to wipe out the hard drive.
+
+### 12.5.2. Browser Hijacker
+
+- **Hijacks** the victim's browser.
+- Can redirect victims to specific pages.
+- Intention is make money by feeding ads to the victim.
+- Most are developed by advertisers looking to track usage habits.
+
+### 12.5.3. Rogue Security Software
+
+- Pretends to be a good program to remove malware but is in fact a malware itself.
+- Very often will turn off any real security software available.
+- Gotten from websites offering better security.
+- Only install security software from known vendors.
 
 # 13. Defences
 
