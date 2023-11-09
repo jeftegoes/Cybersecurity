@@ -1,0 +1,40 @@
+<mxfile host="Electron" modified="2023-11-09T02:56:45.274Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.5.1 Chrome/112.0.5615.204 Electron/24.6.0 Safari/537.36" etag="ziT0b0SY24I4p9pNWvs8" version="21.5.1" type="device">
+  <diagram name="Page-1" id="I74EVGXsY92pDwFl4vaT">
+    <mxGraphModel dx="1084" dy="1184" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xqNTv5u822Kl-cCpjx48-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xqNTv5u822Kl-cCpjx48-1" target="xqNTv5u822Kl-cCpjx48-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xqNTv5u822Kl-cCpjx48-1" value="Sender" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=20;fontStyle=1;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.client;" vertex="1" parent="1">
+          <mxGeometry x="140" y="420" width="78" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="xqNTv5u822Kl-cCpjx48-3" value="plaintext" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.documents;" vertex="1" parent="1">
+          <mxGeometry x="300" y="350" width="64" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="xqNTv5u822Kl-cCpjx48-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xqNTv5u822Kl-cCpjx48-6" target="xqNTv5u822Kl-cCpjx48-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xqNTv5u822Kl-cCpjx48-6" value="Encryption -&amp;gt; &lt;b&gt;Public Key&lt;/b&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#BF0816;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.data_encryption_key;" vertex="1" parent="1">
+          <mxGeometry x="460" y="419" width="62" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="xqNTv5u822Kl-cCpjx48-7" value="Cipher" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#BF0816;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.encrypted_data;" vertex="1" parent="1">
+          <mxGeometry x="610" y="350" width="62" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="xqNTv5u822Kl-cCpjx48-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xqNTv5u822Kl-cCpjx48-9" target="xqNTv5u822Kl-cCpjx48-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xqNTv5u822Kl-cCpjx48-9" value="Decryption -&amp;gt; &lt;b&gt;Private Key&lt;/b&gt;" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#0000FF;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.data_encryption_key;" vertex="1" parent="1">
+          <mxGeometry x="765" y="419" width="62" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="xqNTv5u822Kl-cCpjx48-10" value="Receiver" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=20;fontStyle=1;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.client;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="420" width="78" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="xqNTv5u822Kl-cCpjx48-13" value="plaintext" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.documents;" vertex="1" parent="1">
+          <mxGeometry x="920" y="350" width="64" height="78" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

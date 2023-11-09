@@ -73,19 +73,19 @@
     - [12.2.2. Prevention](#1222-prevention)
   - [12.3. Adware and Spyware](#123-adware-and-spyware)
     - [12.3.1. Prevention](#1231-prevention)
-  - [12.4. Ransonware](#124-ransonware)
+  - [12.4. Ransomware](#124-ransomware)
     - [12.4.1. Methods of Delivery](#1241-methods-of-delivery)
     - [12.4.2. Prevention](#1242-prevention)
   - [12.5. Others](#125-others)
     - [12.5.1. Rootkits](#1251-rootkits)
     - [12.5.2. Browser Hijacker](#1252-browser-hijacker)
     - [12.5.3. Rogue Security Software](#1253-rogue-security-software)
-- [13. Defences](#13-defences)
+- [13. Defenses](#13-defenses)
   - [13.1. Firewall](#131-firewall)
     - [13.1.1. How Firewalls Work?](#1311-how-firewalls-work)
     - [13.1.2. Types](#1312-types)
   - [13.2. Encryption](#132-encryption)
-    - [13.2.1. Types of Encryption](#1321-types-of-encryption)
+    - [13.2.1. Types of Encryptions](#1321-types-of-encryptions)
   - [13.3. Biometrics](#133-biometrics)
     - [13.3.1. Biometric Identifiers](#1331-biometric-identifiers)
   - [13.4. Antivirus](#134-antivirus)
@@ -122,7 +122,7 @@
 
 - These two terms are used interchangeably all the time.
 - **Cybersecurity** deals specifically with protecting your data from **cyber threats**.
-- T hreats that exist on the internet threats that exist in the cyber world.
+- Threats that exist on the internet threats that exist in the cyber world.
 - But when you're talking about **Information Security**.
   - It's all about protecting your data.
 
@@ -155,7 +155,7 @@
 
 ## 3.1. Disclosure
 
-- Data is accessed by non-authoried users.
+- Data is accessed by non-authorized users.
 - Trojans, brute force attacks, theft.
 
 ## 3.2. Alteration
@@ -198,7 +198,7 @@
 ## 4.4. IMAP & SMTP
 
 - **IMAP** = Internet Access Message Protocol.
-  - Constrols how internet messages are sent.
+  - Controls how internet messages are sent.
 - **SMTP** = Simple Mail Transfer Protocol.
   - Governs how emails are sent and received.
 
@@ -223,7 +223,7 @@
   - **Application Layer:** Standardizes data exchange for applications e.g. HTTP, FTP.
   - **Transport Layer:** Handles communication between hosts e.g. TCP.
   - **Internet / Networking Layer:** Connects independent networks together e.g. IP.
-  - **Network Acces / Datalink Layer:** Consists of protocols that operate on a link that connects hosts on a network e.g. Ethernet.
+  - **Network Access / Datalink Layer:** Consists of protocols that operate on a link that connects hosts on a network e.g. Ethernet.
 
 ![TCP IP Protocol Model](Images/TcpIpProtocolModel.png)
 
@@ -250,7 +250,7 @@
   - Financial interests.
 - **Grey Hat**
   - Very skilled.
-  - Black Hat tatics for White Hat objectives.
+  - Black Hat tactics for White Hat objectives.
   - Means justifies the end.
 - **Script Kiddie**
   - Unskilled nuisances.
@@ -305,7 +305,7 @@
 
 ## 8.4. Establish Persistence
 
-- Ensuring continous access even after the breach/attack has been discovered by the victim.
+- Ensuring continuous access even after the breach/attack has been discovered by the victim.
   - Adding backdoors.
   - Remote access control.
 
@@ -328,7 +328,7 @@
 # 10. Social Engineering
 
 - Exploiting human emotions and interactions to extract valuable information.
-- More dangerous than traditional methods of hacking as it relies on human error which is subsjective & less predictable than software/hardware vulnerabilities.
+- More dangerous than traditional methods of hacking as it relies on human error which is subjective & less predictable than software/hardware vulnerabilities.
 
 ## 10.1. Baiting
 
@@ -387,10 +387,10 @@
 ## 11.1. Brute Force Attacks
 
 - **BFA** = Brute Force Attacks.
-- A trial and error attack againg passwords.
+- A trial and error attack against passwords.
 - Checks all possible key combinations.
 - Automated software is used to generate a large number of consecutive guesses.
-- Infallibile but time consuming.
+- Infallible but time consuming.
 - Depends heavily on the key length, e.g.:
   - 2 characters = 3,844 guesses because:
     - First character: lowercase letters (26) + uppercase letters (26) + numbers (10) = 62.
@@ -408,10 +408,10 @@
 ## 11.2. Phishing
 
 - What's **Phishing**?
-  - The attempt by a hacker to obtain sensitive data by sending **crafted emails** to a pontential victim whilst **impersonating** a known person or body.
+  - The attempt by a hacker to obtain sensitive data by sending **crafted emails** to a potential victim whilst **impersonating** a known person or body.
 - The email contains a **malicious link** which when clicked on, can either install malware or **redirect** the victim to a fake website.
 - The website will appear to be **legitimate** and will resemble the actual website of the company the hacker is **impersonating**.
-- The victim is then prompted to login whgick when he/she does, the credentials are recorded and sent to the hacker.
+- The victim is then prompted to **login** which when he/she does, the credentials are **recorded** and sent to the hacker.
 - Phishing relies on:
   - Naivety.
   - Curiosity.
@@ -424,7 +424,8 @@
 - Spear
   - Phishing attack directed at a very specific target.
 - Whaling
-  - Phishing attack directed against senior executives. SOmetimes called the CEO fraud attack.
+  - Phishing attack directed against senior executives.
+    - Sometimes called the CEO fraud attack.
 - Vishing
   - Phishing attack with a phone call.
 - Smishing
@@ -466,7 +467,7 @@
 - The IP address of the source can be blocked.
 - Harder to combat because traffic comes form thousands of different sources.
 - It is also difficult do distinguish between legitimate user traffic from attack when spread across so many sources.
-- DDoS attacks are distribuited using botnets.
+- DDoS attacks are distributed using botnets.
 - Very common with Hacktivists.
 
 ### 11.4.1. Prevention
@@ -485,7 +486,7 @@
 ### 11.5.1. Types of MITMAs
 
 - **Email Hijacking:** Attacker gains access to email accounts.
-- **Wifi Eavesdropping:** Hijacking a wifi connection.
+- **Wifi Eavesdropping:** Hijacking a Wifi connection.
 - **Session Hijacking:** Connection between a computer and a website.
 
 ## 11.6. SQL Injections & XSS Attack
@@ -517,7 +518,7 @@
 ## 11.7. Supply Chain Attacks
 
 - What's **Supply Chain Attacks**?
-  - A supply chain attackis a type of cyberattack that targets a trusted third-party vendor who offers services or software vital to the supply chain.
+  - A type of cyberattack that targets a trusted **third-party vendor** who offers services or software vital to the supply chain.
 
 ![Supply Chain Attacks](Images/SupplyChainAttacks.png)
 
@@ -556,7 +557,7 @@
 
 - What's a **Trojan**?
   - A very powerful malware often disguised as legitimate software.
-  - Very sophisticated and coud be anything e.g. game, song or even an app.
+  - Very sophisticated and could be anything e.g. game, song or even an app.
   - A trojan cannot self replicate.
 
 ![Trojan](Images/Trojan.png)
@@ -566,12 +567,12 @@
 - **Backdoor Trojan:** Allows a hacker unauthorized access to a system in order to control it.
 - **Infostealer Trojan:** Steals data from the infected computer.
 - **Trojan Downloader:** Can download and install new versions of malware onto a system.
-- **Trokan DDoS:** Can conduct denial of service attacks agains websites.
+- **Trokan DDoS:** Can conduct denial of service attacks against websites.
 
 ### 12.2.2. Prevention
 
 - Using Antimalware products.
-- Run updates when available (patchs).
+- Run updates when available (patches).
 - Download files from only trusted websites.
 
 ## 12.3. Adware and Spyware
@@ -595,15 +596,15 @@
 - Think twice about free software.
 - Use spyware scanners.
 
-## 12.4. Ransonware
+## 12.4. Ransomware
 
-- **Ransonware** = Kidnapping data.
+- **Ransomware** = Kidnapping data.
 - Ransomware depends on:
   - Data access.
   - Data sensitivity.
 - The victim's files are encrypted and must pay a ransom in order to receive the decryption key that would allow them to regain access.
 
-![Ransonware](Images/RansomPayment.png)
+![Ransomware](Images/RansomPayment.png)
 
 - The ransomware gang might threaten to release sensitive company data to the public e.g. tax records, salaries.
 
@@ -645,7 +646,7 @@
 - Gotten from websites offering better security.
 - Only install security software from known vendors.
 
-# 13. Defences
+# 13. Defenses
 
 ## 13.1. Firewall
 
@@ -677,17 +678,19 @@
 - Decryption also uses a key to unlock the cipher and make it accessible again.
 - Cryptography is the study or science concerned with secret communication.
 
-### 13.2.1. Types of Encryption
+### 13.2.1. Types of Encryptions
 
 - **Asymmetric Encryption**
+
   - Asymmetric uses two different keys for encrypting and decrypting.
   - **RSA** = Rivest-Shamir-Adleman - [RSA tool](https://www.devglan.com/online-tools/rsa-encryption-decryption)
-    image here
+    ![Asymmetric Encryption](Images/AsymmetricEncryption.png)
+
 - **Symmetric Encryption**
   - Symmetric uses just one.
-  - **DES** = Data Encryuption Standard.
+  - **DES** = Data Encryption Standard.
   - **AES** = Advanced Encryption Standard.
-    image here
+    ![Symmetric Encryption](Images/SymmetricEncryption.png)
 
 ## 13.3. Biometrics
 
@@ -696,7 +699,7 @@
   - **Everyone is unique!**
 - A database that stores the biometric data form comparison.
 - Accuracy has improved and cost reduced over time.
-- Becoming increasingly commom.
+- Becoming increasingly common.
 
 ### 13.3.1. Biometric Identifiers
 
@@ -721,23 +724,23 @@
   - Antivirus software is used to protect a computer from malware.
 - Viruses detect malware by signatures i.e. pattern of data that is know to be related to already identified malware.
 - Antiviruses can also use _Heuristic_ methods i.e. predicting a file is malicious by studying its behavior.
-- **Sandbox Testing:** The file is allower to run in a controlled virtual system to see what it does.
+- **Sandbox Testing:** The file is allowed to run in a controlled virtual system to see what it does.
   - Can result in a _false positive_, a legit program classified as malware.
-- Antiviruses differ in ther detection rates.
+- Antiviruses differ in their detection rates.
 - System resources usage.
 
 ### 13.4.1. Operations
 
 - **On Access Scanning:** The antivirus checks every file or program that is opened.
 - **Full System Scan**
-- **Polymorphyc Virus:** A virus that morphs or changes its code making it very difficult to be detected.
+- **Polymorphic Virus:** A virus that morphs or changes its code making it very difficult to be detected.
 
 ## 13.5. Factor Authentication Methods
 
 - **Authentication Factors**
   - **Knowledge Factor:** Something the user knows like a password.
   - **Possession Factor:** Something the user has like a token or mobile device.
-  - **Inherence Factor:** Somenthing the user is e.g. biometrics.
+  - **Inherence Factor:** Something the user is e.g. biometrics.
 
 ### 13.5.1. 2 Factor Authentication
 
@@ -775,25 +778,25 @@
 
 - **DMZ** = Demilitarized Zone.
 - What's **DMZ**?
-  - A phisical or logical subnetwork that separates a local area network from other untrusted networks e.g. the internet.
+  - A physical or logical subnetwork that separates a local area network from other untrusted networks e.g. the internet.
 - External facing servers and resources are placed in the DMZ so they are accessible from the internet but internal LAN is kept off limits.
 
 ## 13.7. Security for Wireless Networks
 
 - The prevention of unauthorized access or damage to computers using wireless networks.
-- **Encryption:** Wireless communicaion us unintelligible to anyone but those with the right encryption keys.
+- **Encryption:** Wireless communication us unintelligible to anyone but those with the right encryption keys.
 - **Authentication:** Only authorized users whose identity has been verified can join and use the network.
 
 ### 13.7.1. Wireless Protocols
 
 - **WEP - Wired Equivalent Privacy**
-  - Approved back in September 1999 but extremely vulnerable and was abandonet by the Wi-fi alliance in 2004.
+  - Approved back in September 1999 but extremely vulnerable and was abandoned by the Wi-fi alliance in 2004.
 - **WPA - Wi-Fi Protected Access**
   - Big improvement over WEP but still relied on exploitable elements and is still quite vulnerable to attacks.
 - **WPA2 - Wi-Fi Protected Access 2**
-  - Uses Advanced Encryption Standard (AES) but still vulnerable to certain types of attacks like brute force attacks and also allow anyone on the same public network to observe your ativity.
+  - Uses Advanced Encryption Standard (AES) but still vulnerable to certain types of attacks like brute force attacks and also allow anyone on the same public network to observe your activity.
 - **WPA3 - Wi-Fi Protected Access 3**
-  - Lauched back in 2018 and offers protection against all types of attacks and is by far the bbest wireless security protocol to date.
+  - Launched back in 2018 and offers protection against all types of attacks and is by far the bbest wireless security protocol to date.
 
 ## 13.8. Password Management
 
