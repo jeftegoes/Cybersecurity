@@ -1,0 +1,61 @@
+<mxfile host="Electron" modified="2023-11-09T02:11:21.768Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.5.1 Chrome/112.0.5615.204 Electron/24.6.0 Safari/537.36" etag="sXmC-lW_Z3ith8FSM6vl" version="21.5.1" type="device">
+  <diagram name="Page-1" id="4SJidofEksfm7Y5mu1MO">
+    <mxGraphModel dx="1218" dy="1191" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="v_tH1v8mYyAs3kB6r4fe-1" value="Application" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="700" y="370" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="v_tH1v8mYyAs3kB6r4fe-2" value="Transport" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="700" y="490" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v_tH1v8mYyAs3kB6r4fe-4" value="Internet" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="700" y="560" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v_tH1v8mYyAs3kB6r4fe-5" value="Application" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="330" y="370" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="v_tH1v8mYyAs3kB6r4fe-6" value="Network" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="330" y="560" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v_tH1v8mYyAs3kB6r4fe-7" value="Transport" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="330" y="490" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v_tH1v8mYyAs3kB6r4fe-8" value="Network Access" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="700" y="630" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="v_tH1v8mYyAs3kB6r4fe-9" value="Presentation" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="330" y="410" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="v_tH1v8mYyAs3kB6r4fe-10" value="Session" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="330" y="450" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="v_tH1v8mYyAs3kB6r4fe-11" value="Link" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="330" y="630" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="v_tH1v8mYyAs3kB6r4fe-12" value="Phisical" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=17;" vertex="1" parent="1">
+          <mxGeometry x="330" y="670" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="v_tH1v8mYyAs3kB6r4fe-13" value="The OSI Model" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontColor=#FF0000;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="330" y="320" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v_tH1v8mYyAs3kB6r4fe-14" value="The TCP/IP Model" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=20;fontColor=#FF0000;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="670" y="320" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v_tH1v8mYyAs3kB6r4fe-15" value="DHCP, DNS, FTP, HTTP, HTTPS, POP, SMTP, SSH, etc..." style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="510" y="370" width="170" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="v_tH1v8mYyAs3kB6r4fe-16" value="TCP / UDP" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="510" y="490" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v_tH1v8mYyAs3kB6r4fe-17" value="IP Address: IPv4, IPv6" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="510" y="560" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="v_tH1v8mYyAs3kB6r4fe-18" value="Ethernet cable, fibre, wireless, coax, etc..." style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="510" y="630" width="170" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

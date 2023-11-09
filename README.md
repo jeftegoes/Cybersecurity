@@ -81,7 +81,31 @@
     - [12.5.2. Browser Hijacker](#1252-browser-hijacker)
     - [12.5.3. Rogue Security Software](#1253-rogue-security-software)
 - [13. Defences](#13-defences)
+  - [13.1. Firewall](#131-firewall)
+    - [13.1.1. How Firewalls Work?](#1311-how-firewalls-work)
+    - [13.1.2. Types](#1312-types)
+  - [13.2. Encryption](#132-encryption)
+    - [13.2.1. Types of Encryption](#1321-types-of-encryption)
+  - [13.3. Biometrics](#133-biometrics)
+    - [13.3.1. Biometric Identifiers](#1331-biometric-identifiers)
+  - [13.4. Antivirus](#134-antivirus)
+    - [13.4.1. Operations](#1341-operations)
+  - [13.5. Factor Authentication Methods](#135-factor-authentication-methods)
+    - [13.5.1. 2 Factor Authentication](#1351-2-factor-authentication)
+    - [13.5.2. Multi Factor Authentication](#1352-multi-factor-authentication)
+  - [13.6. Honey Pots and DMZs](#136-honey-pots-and-dmzs)
+    - [13.6.1. Research Honeypot](#1361-research-honeypot)
+    - [13.6.2. Production Honeypot](#1362-production-honeypot)
+    - [13.6.3. Demilitarized Zone](#1363-demilitarized-zone)
+  - [13.7. Security for Wireless Networks](#137-security-for-wireless-networks)
+    - [13.7.1. Wireless Protocols](#1371-wireless-protocols)
+  - [13.8. Password Management](#138-password-management)
 - [14. Cybersecurity at the Work Place](#14-cybersecurity-at-the-work-place)
+  - [14.1. Security Policy](#141-security-policy)
+  - [14.2. Incident Response Plan](#142-incident-response-plan)
+  - [14.3. Disaster Recovery Plan](#143-disaster-recovery-plan)
+  - [14.4. BYOD Policy](#144-byod-policy)
+    - [14.4.1. A Sample BYOD Policy](#1441-a-sample-byod-policy)
 - [15. Basic terminologies](#15-basic-terminologies)
 - [16. Actionable Steps for Personal Security](#16-actionable-steps-for-personal-security)
   - [16.1. Use a strong password](#161-use-a-strong-password)
@@ -180,7 +204,7 @@
 
 # 5. Cookies
 
-- What's Cookies?
+- What's **Cookies**?
   - There are pieces of text stored by a web server on your hard disk.
 - They allow a web site to store information on your computer and then later retrieve it.
 - Their purpose is to identify a user, check for their **past activity** on the website and use this record to provide the most relevant information to the user.
@@ -196,12 +220,12 @@
 
 - A suite of protocols used to interconnect network devices on the internet.
 - Divided into 4 major layers:
-  - **Datalink Layer:** Consists of protocols that operate on a link that connects hosts on a network e.g. Ethernet.
-  - **Internet/Networking Layer:** Connects independent networks together e.g. IP.
-  - **Transport Layer:** Handles communication between hosts e.g. TCP.
   - **Application Layer:** Standardizes data exchange for applications e.g. HTTP, FTP.
+  - **Transport Layer:** Handles communication between hosts e.g. TCP.
+  - **Internet / Networking Layer:** Connects independent networks together e.g. IP.
+  - **Network Acces / Datalink Layer:** Consists of protocols that operate on a link that connects hosts on a network e.g. Ethernet.
 
-IMAGE HERE
+![TCP IP Protocol Model](Images/TcpIpProtocolModel.png)
 
 ## 6.1. TCP
 
@@ -383,7 +407,7 @@ IMAGE HERE
 
 ## 11.2. Phishing
 
-- What's Phishing?
+- What's **Phishing**?
   - The attempt by a hacker to obtain sensitive data by sending **crafted emails** to a pontential victim whilst **impersonating** a known person or body.
 - The email contains a **malicious link** which when clicked on, can either install malware or **redirect** the victim to a fake website.
 - The website will appear to be **legitimate** and will resemble the actual website of the company the hacker is **impersonating**.
@@ -428,7 +452,7 @@ IMAGE HERE
 - A command & control server is used to issue commands to the bots in a botnet.
 - Botnets are very often used to perform DDoS attacks.
 
-IMAGE HERE
+![Botnets](Images/Botnets.png)
 
 ### 11.3.3. Prevention
 
@@ -453,7 +477,7 @@ IMAGE HERE
 
 ## 11.5. Man in The Middle Attacks
 
-image here
+![Man in The Middle Attacks](Images/ManInTheMiddleAttacks.png)
 
 - Can only succeed when the attacker can impersonate both sides.
 - Very common with unsecure wireless connection.
@@ -492,7 +516,10 @@ image here
 
 ## 11.7. Supply Chain Attacks
 
-- Image here
+- What's **Supply Chain Attacks**?
+  - A supply chain attackis a type of cyberattack that targets a trusted third-party vendor who offers services or software vital to the supply chain.
+
+![Supply Chain Attacks](Images/SupplyChainAttacks.png)
 
 # 12. Malware
 
@@ -527,7 +554,7 @@ image here
 
 ## 12.2. Trojans
 
-- What's a Trojan?
+- What's a **Trojan**?
   - A very powerful malware often disguised as legitimate software.
   - Very sophisticated and coud be anything e.g. game, song or even an app.
   - A trojan cannot self replicate.
@@ -549,7 +576,7 @@ image here
 
 ## 12.3. Adware and Spyware
 
-- What's an Adware?
+- What's an **Adware**?
   - A program that displays unwanted banner advertisements.
 - Often bundled within software that is installed.
 - Adware is included to recover development costs or provider the product for free.
@@ -558,7 +585,7 @@ image here
 
 ![Adware](Images/Adware.png)
 
-- What's an Spyware?
+- What's an **Spyware**?
   - Spyware monitor computer and internet use.
 - E.g. Keyloggers that can record keystrokes or take screenshots.
 - Data is sent to hackers of advertising agencies.
@@ -620,7 +647,207 @@ image here
 
 # 13. Defences
 
+## 13.1. Firewall
+
+- A firewall is a security device that monitors **incoming** and **outgoing** network traffic.
+- From the **outbound** side, firewalls can prevent employees from sending certain data outside of the network.
+- From the **inbound** side, firewalls can prevent access to certain websites.
+
+![Firewall](Images/Firewall.png)
+
+### 13.1.1. How Firewalls Work?
+
+- **Packet filtering:** Checks all the data passing through using a filter.
+- **Proxy Service:** The firewall acts as an intermediary between systems.
+- **Stateful Inspection:** Tracks the state of a connection between systems.
+
+### 13.1.2. Types
+
+- Hardware: Can be standalone or built into network devices like switches and routers.
+- Software: Either a standalone application of part of a security application like Antivirus.
+
+## 13.2. Encryption
+
+- What's **Encryption**?
+  - A process of making information **hidden** or **secretive**.
+  - Encrypt = En + Crypto
+    - **En** = Make
+    - **Crypto** = Hidden/Secret
+- **Encryption** uses a key to make the information secretive **cipher**.
+- Decryption also uses a key to unlock the cipher and make it accessible again.
+- Cryptography is the study or science concerned with secret communication.
+
+### 13.2.1. Types of Encryption
+
+- **Asymmetric Encryption**
+  - Asymmetric uses two different keys for encrypting and decrypting.
+  - **RSA** = Rivest-Shamir-Adleman - [RSA tool](https://www.devglan.com/online-tools/rsa-encryption-decryption)
+    image here
+- **Symmetric Encryption**
+  - Symmetric uses just one.
+  - **DES** = Data Encryuption Standard.
+  - **AES** = Advanced Encryption Standard.
+    image here
+
+## 13.3. Biometrics
+
+- What's **Biometrics**?
+  - A security mechanism used to authenticate and provide access based on the verification of physical characteristics.
+  - **Everyone is unique!**
+- A database that stores the biometric data form comparison.
+- Accuracy has improved and cost reduced over time.
+- Becoming increasingly commom.
+
+### 13.3.1. Biometric Identifiers
+
+- Physiological Characteristics
+  - The shape or composition of the body, like:
+    - Fingerprints.
+    - DNA.
+    - Retina.
+    - Face.
+    - Hand.
+- Behavioral Characteristics
+  - The behavior of a person, like:
+    - Voice.
+    - Gestures.
+    - Gait.
+
+![Biometrics](Images/Biometrics.png)
+
+## 13.4. Antivirus
+
+- What's **Antivirus**?
+  - Antivirus software is used to protect a computer from malware.
+- Viruses detect malware by signatures i.e. pattern of data that is know to be related to already identified malware.
+- Antiviruses can also use _Heuristic_ methods i.e. predicting a file is malicious by studying its behavior.
+- **Sandbox Testing:** The file is allower to run in a controlled virtual system to see what it does.
+  - Can result in a _false positive_, a legit program classified as malware.
+- Antiviruses differ in ther detection rates.
+- System resources usage.
+
+### 13.4.1. Operations
+
+- **On Access Scanning:** The antivirus checks every file or program that is opened.
+- **Full System Scan**
+- **Polymorphyc Virus:** A virus that morphs or changes its code making it very difficult to be detected.
+
+## 13.5. Factor Authentication Methods
+
+- **Authentication Factors**
+  - **Knowledge Factor:** Something the user knows like a password.
+  - **Possession Factor:** Something the user has like a token or mobile device.
+  - **Inherence Factor:** Somenthing the user is e.g. biometrics.
+
+### 13.5.1. 2 Factor Authentication
+
+- A user provides 2 authentication factors to verify who they are.
+- Provides an additional layer of security.
+- Using two factor from the same category does not constitute 2FA e.g. username & password.
+- Authentication products include tokens, smart cards and smart phones.
+- Overall it does improve security but not foolproof because cards could be stolen and fingerprints lifted.
+- **3 factor** and **multi factor authentication** methods are further improvements.
+
+### 13.5.2. Multi Factor Authentication
+
+- Can include two more factors like time and location.
+
+## 13.6. Honey Pots and DMZs
+
+- What's **Honeypots**?
+  - A computer system that is a decoy to lure cybercriminals.
+- Used to study attempts to gain unauthorized access.
+- The computer, applications and data simulate the behavior of a real system.
+
+![Honeypot](Images/HoneypotDiagram.png)
+
+### 13.6.1. Research Honeypot
+
+- Run to enable close analysis of how attacks develop and progress in order to learn how to protect systems against them.
+
+### 13.6.2. Production Honeypot
+
+- Placed inside a production network with other real servers to act as a decoy.
+- They are designed to appear real and contain resources to attract and occupy hackers.
+- The objective is keep the hackers distracted while the real production servers are patched up.
+
+### 13.6.3. Demilitarized Zone
+
+- **DMZ** = Demilitarized Zone.
+- What's **DMZ**?
+  - A phisical or logical subnetwork that separates a local area network from other untrusted networks e.g. the internet.
+- External facing servers and resources are placed in the DMZ so they are accessible from the internet but internal LAN is kept off limits.
+
+## 13.7. Security for Wireless Networks
+
+- The prevention of unauthorized access or damage to computers using wireless networks.
+- **Encryption:** Wireless communicaion us unintelligible to anyone but those with the right encryption keys.
+- **Authentication:** Only authorized users whose identity has been verified can join and use the network.
+
+### 13.7.1. Wireless Protocols
+
+- **WEP - Wired Equivalent Privacy**
+  - Approved back in September 1999 but extremely vulnerable and was abandonet by the Wi-fi alliance in 2004.
+- **WPA - Wi-Fi Protected Access**
+  - Big improvement over WEP but still relied on exploitable elements and is still quite vulnerable to attacks.
+- **WPA2 - Wi-Fi Protected Access 2**
+  - Uses Advanced Encryption Standard (AES) but still vulnerable to certain types of attacks like brute force attacks and also allow anyone on the same public network to observe your ativity.
+- **WPA3 - Wi-Fi Protected Access 3**
+  - Lauched back in 2018 and offers protection against all types of attacks and is by far the bbest wireless security protocol to date.
+
+## 13.8. Password Management
+
+- Passphrases are very long in length.
+  - _"The lazy brown cat jumped over the big brown dog."_
+- **Passphrases can contain spaces unlike passwords.**
+- So what exactly constitutes a strong password?
+  - At least 8 characters.
+  - Contain both numbers & letters.
+  - At least one CAPITAL letter.
+  - At least one symbol (@, #, \*).
+
 # 14. Cybersecurity at the Work Place
+
+## 14.1. Security Policy
+
+- This is a written document that describes how an organization protects its virtual and physical data assets from threats.
+- What assets need to be protected?
+- What data can employees access?
+- How can they access the data?
+- Can employees use USB drives?
+- Access the internet freely?
+- How often are password changed?
+
+## 14.2. Incident Response Plan
+
+- A set of policies and procedures that are used to identify, contain and eliminate cyberattacks.
+- The goal is to allow an organization to quickly detect and stop attacks and prevent future attacks of the same type.
+
+## 14.3. Disaster Recovery Plan
+
+- The plan that focuses on the restoration of critical systems after a disaster.
+- The disaster could be a fire, earthquake or even a very serious cyber attack.
+
+## 14.4. BYOD Policy
+
+- **BYOD** = Bring Your Own Device.
+- It refers to the phenomenon that we have at the modern workplace where employees are able to do their work on their mobile devices.
+- A policy that describes how employees are able to use their own personal device to access company data in a safe and secure manner.
+
+### 14.4.1. A Sample BYOD Policy
+
+- Must address both the concerns of the company and the employees.
+- Must aim for a balance between security and ease of access.
+- **The BYOD Policy**
+  - Determine what devices will be permitted and who will be allowed to use them.
+  - Determine the kind of company data that will be accessible.
+  - Clearly state the right of the company to access, monitor and delete information from the employee owned devices.
+  - Explain how the company will protect the employee's personal data.
+  - Deploy mobile device management to partition the devices separating work data from personal files.
+  - Enforce use of strong passwords, antimalware and automatic lockup after periods of inactivity.
+  - Establish protocols for lost or stolen devices.
+  - Develop the policy in partnership with IT, Risk Management and Legal Counsel.
+  - Revise current policies and protocols.
 
 # 15. Basic terminologies
 

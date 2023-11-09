@@ -1,0 +1,103 @@
+<mxfile host="Electron" modified="2023-11-09T02:44:36.183Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.5.1 Chrome/112.0.5615.204 Electron/24.6.0 Safari/537.36" etag="lFx-k0A3FXnV-RisV6ja" version="21.5.1" type="device">
+  <diagram name="Page-1" id="8ygFSD02JomU8cY_V_HO">
+    <mxGraphModel dx="1218" dy="1184" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HZG9D_HspRZIUmt24Ock-4" value="Server" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=top;verticalAlign=bottom;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.traditional_server;labelPosition=center;" vertex="1" parent="1">
+          <mxGeometry x="580" y="100" width="45" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-5" value="Client" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.client;" vertex="1" parent="1">
+          <mxGeometry x="446.5" y="570" width="78" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-7" value="Honeypot" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.pngmart.com/files/7/Jar-of-Honey-Transparent-PNG.png;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="290" y="390" width="95.75" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-8" value="Client" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.client;" vertex="1" parent="1">
+          <mxGeometry x="580" y="599" width="78" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-9" value="Server" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=top;verticalAlign=bottom;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.traditional_server;labelPosition=center;" vertex="1" parent="1">
+          <mxGeometry x="508" y="190" width="45" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-10" value="Server" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=top;verticalAlign=bottom;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.traditional_server;labelPosition=center;" vertex="1" parent="1">
+          <mxGeometry x="430" y="280" width="45" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="HZG9D_HspRZIUmt24Ock-11" target="HZG9D_HspRZIUmt24Ock-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="HZG9D_HspRZIUmt24Ock-11" target="HZG9D_HspRZIUmt24Ock-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="HZG9D_HspRZIUmt24Ock-11" target="HZG9D_HspRZIUmt24Ock-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="HZG9D_HspRZIUmt24Ock-11" target="HZG9D_HspRZIUmt24Ock-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="HZG9D_HspRZIUmt24Ock-11" target="HZG9D_HspRZIUmt24Ock-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="HZG9D_HspRZIUmt24Ock-11" target="HZG9D_HspRZIUmt24Ock-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="460" y="440" />
+              <mxPoint x="460" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="HZG9D_HspRZIUmt24Ock-11" target="HZG9D_HspRZIUmt24Ock-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-11" value="LAN Switch" style="image;html=1;image=img/lib/clip_art/networking/Switch_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="710" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="HZG9D_HspRZIUmt24Ock-17" target="HZG9D_HspRZIUmt24Ock-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="HZG9D_HspRZIUmt24Ock-17" target="HZG9D_HspRZIUmt24Ock-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="HZG9D_HspRZIUmt24Ock-17" target="HZG9D_HspRZIUmt24Ock-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-17" value="Router" style="image;html=1;image=img/lib/clip_art/networking/Switch_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="950" y="480" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-18" value="Client" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.client;" vertex="1" parent="1">
+          <mxGeometry x="802" y="640" width="78" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-19" value="Client" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.client;" vertex="1" parent="1">
+          <mxGeometry x="951" y="640" width="78" height="76" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-20" value="Honeypot" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.pngmart.com/files/7/Jar-of-Honey-Transparent-PNG.png;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1100" y="625.5" width="95.75" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="HZG9D_HspRZIUmt24Ock-26" target="HZG9D_HspRZIUmt24Ock-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-26" value="External Firewall" style="image;html=1;image=img/lib/clip_art/networking/Firewall_02_128x128.png" vertex="1" parent="1">
+          <mxGeometry x="1115.75" y="400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="HZG9D_HspRZIUmt24Ock-28" target="HZG9D_HspRZIUmt24Ock-26">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1339" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="HZG9D_HspRZIUmt24Ock-28" target="HZG9D_HspRZIUmt24Ock-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-28" value="Internet" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/internet_cloud.svg;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;fontSize=20;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1260" y="200" width="158.73" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-29" value="Honeypot" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.pngmart.com/files/7/Jar-of-Honey-Transparent-PNG.png;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1060" y="197.5" width="95.75" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="HZG9D_HspRZIUmt24Ock-32" value="DMZ" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="960" y="410" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
