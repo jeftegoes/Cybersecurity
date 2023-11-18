@@ -16,11 +16,11 @@
   - [4.2. SSL \& SSH](#42-ssl--ssh)
   - [4.3. FTP \& sFTP](#43-ftp--sftp)
   - [4.4. IMAP \& SMTP](#44-imap--smtp)
-- [5. Cookies](#5-cookies)
-- [6. TCP/IP Protocol](#6-tcpip-protocol)
-  - [6.1. TCP](#61-tcp)
-  - [6.2. IP](#62-ip)
-  - [6.3. Uses](#63-uses)
+- [5. TCP/IP Protocol](#5-tcpip-protocol)
+  - [5.1. TCP](#51-tcp)
+  - [5.2. IP](#52-ip)
+  - [5.3. Uses](#53-uses)
+- [6. Cookies](#6-cookies)
 - [7. Hackers](#7-hackers)
 - [8. Hacking Methodology](#8-hacking-methodology)
   - [8.1. Reconnaissance / Footprinting](#81-reconnaissance--footprinting)
@@ -202,7 +202,34 @@
 - **SMTP** = Simple Mail Transfer Protocol.
   - Governs how emails are sent and received.
 
-# 5. Cookies
+# 5. TCP/IP Protocol
+
+- A suite of protocols used to interconnect network devices on the internet.
+- Divided into 4 major layers:
+  - **Application Layer:** Standardizes data exchange for applications e.g. HTTP, FTP.
+  - **Transport Layer:** Handles communication between hosts e.g. TCP.
+  - **Internet / Networking Layer:** Connects independent networks together e.g. IP.
+  - **Network Access / Datalink Layer:** Consists of protocols that operate on a link that connects hosts on a network e.g. Ethernet.
+
+![TCP IP Protocol Model](Images/TcpIpProtocolModel.png)
+
+## 5.1. TCP
+
+- **TCP** = Transmission Control Protocol.
+- Divides a message or file into packets that are transmitted over the internet and then reassembled when destination is reached.
+
+## 5.2. IP
+
+- **IP** = Internet Protocol.
+- Responsible for the address of each packet so it is sent to the correct destination.
+
+## 5.3. Uses
+
+- Used mostly on the internet.
+- Used for emails.
+- Used for playing games.
+
+# 6. Cookies
 
 - What's **Cookies**?
   - There are pieces of text stored by a web server on your hard disk.
@@ -215,33 +242,6 @@
   - Persistent cookies.
     - Can store your **Remember Me** data on a website e.g. login information.
 - In general, cookies are mostly harmless and help websites run more efficiently but they can also be used to track you and can be exploited by hackers.
-
-# 6. TCP/IP Protocol
-
-- A suite of protocols used to interconnect network devices on the internet.
-- Divided into 4 major layers:
-  - **Application Layer:** Standardizes data exchange for applications e.g. HTTP, FTP.
-  - **Transport Layer:** Handles communication between hosts e.g. TCP.
-  - **Internet / Networking Layer:** Connects independent networks together e.g. IP.
-  - **Network Access / Datalink Layer:** Consists of protocols that operate on a link that connects hosts on a network e.g. Ethernet.
-
-![TCP IP Protocol Model](Images/TcpIpProtocolModel.png)
-
-## 6.1. TCP
-
-- **TCP** = Transmission Control Protocol.
-- Divides a message or file into packets that are transmitted over the internet and then reassembled when destination is reached.
-
-## 6.2. IP
-
-- **IP** = Internet Protocol.
-- Responsible for the address of each packet so it is sent to the correct destination.
-
-## 6.3. Uses
-
-- Used mostly on the internet.
-- Used for emails.
-- Used for playing games.
 
 # 7. Hackers
 
@@ -263,6 +263,13 @@
   - Spy / Saboteur.
 
 # 8. Hacking Methodology
+
+- Reconnaissance / Footprinting.
+- Exploitation.
+- Privilege Escalation.
+- Establish Persistence.
+- Attack Phase.
+- Cover up.
 
 ## 8.1. Reconnaissance / Footprinting
 
@@ -383,6 +390,14 @@
 - Sensitive files should be properly shredded.
 
 # 11. Attacks
+
+- Brute Force Attacks.
+- Phishing.
+- Bots & Botnets.
+- DoS & DDoS.
+- Man in The Middle Attacks.
+- SQL Injections & XSS Attack.
+- Supply Chain Attacks.
 
 ## 11.1. Brute Force Attacks
 
@@ -512,7 +527,7 @@
 ### 11.6.4. Prevention
 
 - Limiting database privileges.
-- comprehensive data sanitization e.g. only numbers allowed in a phone number field in a form.
+- Comprehensive data sanitization e.g. only numbers allowed in a phone number field in a form.
 - Applying software patches.
 
 ## 11.7. Supply Chain Attacks
