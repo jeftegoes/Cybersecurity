@@ -695,17 +695,17 @@
 
 ### 13.2.1. Types of Encryptions
 
-- **Asymmetric Encryption**
-
-  - Asymmetric uses two different keys for encrypting and decrypting.
-  - **RSA** = Rivest-Shamir-Adleman - [RSA tool](https://www.devglan.com/online-tools/rsa-encryption-decryption)
-    ![Asymmetric Encryption](Images/AsymmetricEncryption.png)
-
 - **Symmetric Encryption**
   - Symmetric uses just one.
   - **DES** = Data Encryption Standard.
   - **AES** = Advanced Encryption Standard.
+  - [AES Encryption and Decryption Online](https://www.devglan.com/online-tools/aes-encryption-decryption)
     ![Symmetric Encryption](Images/SymmetricEncryption.png)
+- **Asymmetric Encryption**
+  - Asymmetric uses two different keys for encrypting and decrypting.
+  - **RSA** = Rivest-Shamir-Adleman
+  - [RSA Encryption and Decryption Online](https://www.devglan.com/online-tools/rsa-encryption-decryption)
+    ![Asymmetric Encryption](Images/AsymmetricEncryption.png)
 
 ## 13.3. Biometrics
 
